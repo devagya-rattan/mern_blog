@@ -7,6 +7,7 @@ import postRoutes from "./routes/post.route.js";
 import commentRoutes from "./routes/comment.route.js";
 import cookieParser from "cookie-parser";
 import path from "path";
+import colors from "colors"
 
 dotenv.config();
 
@@ -15,7 +16,7 @@ mongoose
     "mongodb+srv://rattandevagya:rattan@cluster0.fdi8m6v.mongodb.net/blogapp"
   )
   .then(() => {
-    console.log("MongoDb is connected");
+    console.log(" MongoDb is connected ".bgGreen.black);
   })
   .catch((err) => {
     console.log(err);
@@ -29,7 +30,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.listen(8080, () => {
-  console.log("Server is running on port 8080!");
+  console.log(" Server is running on port 8080! ".bgYellow.white);
 });
 
 app.use("/api/user", userRoutes);
