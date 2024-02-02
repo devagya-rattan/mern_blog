@@ -13,7 +13,7 @@ dotenv.config();
 
 mongoose
   .connect(
-    "mongodb+srv://rattandevagya:rattan@cluster0.fdi8m6v.mongodb.net/blogapp"
+    "mongodb+srv://rattandevagya:ratandevagya@cluster0.fdi8m6v.mongodb.net/blogapp"
   )
   .then(() => {
     console.log(" MongoDb is connected ".bgGreen.black);
