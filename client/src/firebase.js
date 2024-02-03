@@ -1,19 +1,16 @@
-// Import the functions you need from the SDKs you need
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+import { initializeApp } from "firebase/app";
+
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: 'mern-blog-b327f.firebaseapp.com',
-  projectId: 'mern-blog-b327f',
-  storageBucket: 'mern-blog-b327f.appspot.com',
-  messagingSenderId: '699397991367',
-  appId: '1:699397991367:web:88ff565ef72a182d6b87e2',
+  apiKey: "AIzaSyAXJ3iKh8ZbXDr96SaBPrAsThZjE5zZM5Q",
+  authDomain: "mernblog-e2976.firebaseapp.com",
+  projectId: "mernblog-e2976",
+  storageBucket: "mernblog-e2976.appspot.com",
+  messagingSenderId: "675230717534",
+  appId: "1:675230717534:web:4b2b684e8eae231d7606cf",
+  measurementId: "G-JVKW2SWDV2"
 };
 
-// Initialize Firebase
+
 export const app = initializeApp(firebaseConfig);
